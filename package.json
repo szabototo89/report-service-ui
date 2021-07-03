@@ -1,11 +1,12 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "dev:tsc": "tsc --watch --noEmit",
     "serve": "vite preview",
-    "build": "npm run build:esm",
-    "build:esm": "tsc --build .\\tsconfig.build.json"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --build .\\tsconfig.esm.json",
+    "build:cjs": "tsc --build .\\tsconfig.cjs.json"
   },
   "peerDependencies": {
     "react": "^17.0.0",
