@@ -1,5 +1,6 @@
 {
   "version": "1.0.0",
+  "name": "product-report-ui",
   "scripts": {
     "dev": "vite",
     "dev:tsc": "tsc --watch --noEmit",
